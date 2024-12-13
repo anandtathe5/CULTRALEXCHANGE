@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldConnect - The Ultimate Cultural Exchange</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            background: #f0f8ff;
+            color: #333;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Header - Subtle and Inviting */
+        header {
+            background: #87ceeb;
+            color: #2e4053;
+            text-align: center;
+            padding: 50px 20px;
+            border-radius: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 50% 50%, rgba(135, 206, 235, 0.2), transparent 70%);
+            animation: rotate 20s linear infinite;
+            z-index: 0;
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            z-index: 1;
+        }
+        header p {
+            font-size: 1.3rem;
+            z-index: 1;
+        }
+        /* Main Content - Light and Airy Layout */
+        .container {
+            max-width: 1400px;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .section {
+            background: #ffffff;
+            border: 1px solid #e6e6e6;
+            border-radius: 20px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+        .section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            background: #f0f8ff;
+            color: #2e4053;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            position: relative;
+        }
+        ul li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #87ceeb;
+        }
+        /* Button Styles - Gentle Interaction */
+        .btn {
+            background: #87ceeb;
+            color: #2e4053;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background 0.3s, transform 0.3s;
+            margin-top: 20px;
+            display: inline-block;
+            padding: 15px 30px;
+        }
+        .btn:hover {
+            background: #b0e0e6;
+            transform: scale(1.03);
+        }
+        /* Featured Elements */
+        .feature-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #ff7f50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+        /* Footer - Calm and Informative */
+        footer {
+            text-align: center;
+            margin-top: auto;
+            padding: 20px 0;
+            background: #e6f3ff;
+            color: #2e4053;
+        }
+        footer a {
+            color: #2e4053;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>WorldConnect</h1>
+    <p>Unleash the power of cultural exchange across the globe.</p>
+</header>
+
+<div class="container">
+    <section class="section">
+        <span class="feature-badge">New!</span>
+        <h2>Explore Cultural Richness</h2>
+        <ul>
+            <li><strong>Virtual Cultural Tours:</strong> <a href="https://www.google.com/streetview/" style="color: #2e4053;">Join virtual tours</a> with Google Street View, now with interactive quizzes.</li>
+            <li><strong>Language Exchange:</strong> Connect with native speakers on <a href="https://www.tandem.net/" style="color: #2e4053;">Tandem</a> for real-time conversation practice with cultural context games.</li>
+            <li><strong>Cultural Workshops:</strong> Learn from experts on <a href="https://www.masterclass.com/" style="color: #2e4053;">MasterClass</a>, now featuring live sessions.</li>
+            <li><strong>Community Events:</strong> Participate in events via <a href="https://www.eventbrite.com/" style="color: #2e4053;">Eventbrite</a> for cultural immersion, with VR support.</li>
+        </ul>
+        <a href="#join" class="btn">Join WorldConnect</a>
+    </section>
+
+    <section class="section">
+        <span class="feature-badge">Exclusive</span>
+        <h2>Personal Growth Through Immersion</h2>
+        <ul>
+            <li><strong>Host Family Experience:</strong> Experience life with locals through <a href="https://www.couchsurfing.com/" style="color: #2e4053;">Couchsurfing</a>, now with a safety certification program.</li>
+            <li><strong>Educational Exchanges:</strong> Study abroad with <a href="https://www.iesabroad.org/" style="color: #2e4053;">IES Abroad</a>, offering scholarships for cultural immersion.</li>
+            <li><strong>Volunteer Opportunities:</strong> Contribute globally with <a href="https://www.volunteermatch.org/" style="color: #2e4053;">VolunteerMatch</a>, now with a project impact tracker.</li>
+            <li><strong>Career Development:</strong> Explore professional exchanges on <a href="https://www.internations.org/" style="color: #2e4053;">InterNations</a>, with dedicated career coaching.</li>
+        </ul>
+        <a href="#learn" class="btn">Learn More</a>
+    </section>
+
+    <section class="section">
+        <span class="feature-badge">Tech-Forward</span>
+        <h2>Technology at Your Service</h2>
+        <ul>
+            <li><strong>AI-Powered Matches:</strong> Discover cultural matches with our AI, similar to <a href="https://www.okcupid.com/" style="color: #2e4053;">OkCupid's matching</a>, now with cultural compatibility scores.</li>
+            <li><strong>Augmented Reality (AR) Experiences:</strong> Use AR for cultural exploration like <a href="https://www.artek.fi/en/" style="color: #2e4053;">Artek's AR</a>, now in 3D for more immersive experiences.</li>
+            <li><strong>Real-time Translation:</strong> Communicate freely with <a href="https://www.deepl.com/translator" style="color: #2e4053;">DeepL Translator</a>, integrated into live chat for seamless communication.</li>
+            <li><strong>Secure, Private Communication:</strong> Safe interactions, akin to <a href="https://signal.org/" style="color: #2e4053;">Signal's privacy</a>, with end-to-end encryption.</li>
+        </ul>
+        <a href="#technology" class="btn">Discover Tech</a>
+    </section>
+</div>
+
+<footer>
+    <p>© 2024 WorldConnect - Connecting Cultures for a Better World</p>
+    <p>Explore more cultural experiences with our partners:</p>
+    <a href="https://www.duolingo.com/">Duolingo</a> | 
+    <a href="https://www.afs.org/">AFS Intercultural Programs</a> | 
+    <a href="https://www.rotary.org/en">Rotary International</a>
+    <p>Join our newsletter for weekly cultural insights!</p>
+    <form id="subscribe-form">
+        <input type="email" placeholder="Your email" required>
+        <button type="submit" class="btn">Subscribe</button>
+    </form>
+</footer>
+
+<script>
+    document.getElementById('subscribe-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thanks for subscribing! You\'ll receive our cultural newsletter soon.');
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
